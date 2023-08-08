@@ -1,46 +1,52 @@
-#Define patient class
-class Patient:
+class Doctor:
 
-    # Constructor 
-    def init(self, pid, name, disease, gender,age):
-        self.pid = pid
+    #Doctor object constructor 
+    def init(self,doctor_id,name,specialization, working_time, qualification,room_number):
+        self.doctor_id = doctor_id
         self.name = name
-        self.disease = disease
-        self.gender = gender
-        self.age = age
+        self.specialization = specialization
+        self.working_time  = working_time
+        self.qualification = qualification
+        self.room_number = room_number
 
-#Getters
-    def get_pid (self):
-        return self.pid
+    # Getters
+    def get_doctor_id(self):
+        return self.doctor_id
 
-    def get_name (self):
+    def get_name(self):
         return self.name
 
-    def get_disease (self):
-        return self.disease
+    def get_specialization(self):
+        return self.specialization
 
-    def get_gender (self):
-        return self.gender
+    def get_working_time(self):
+        return self.working_time
 
-    def get_age (self):
-        return self.age
+    def get_qualification(self):
+        return self.qualification
+
+    def get_room_number(self):
+        return self.room_number 
 
 #Setters
-    def set_pid(self, new_pid):
-        self.pid = new_pid
+    def set_doctor_id(self,new_id):
+        self.doctor_id = new_id
 
-    def set_name(self, new_name):
+    def set_name(self,new_name): 
         self.name = new_name
 
-    def set_disease (self, new_disease):
-        self.disease = new_disease
+    def set_specialization(self, new_specialization):
+        self.specialization = new_specialization
 
-    def set_gender (self, new_gender):
-        self.gender = new_gender
+    def set_working_time(self,new_working_time):
+        self.working_time = new_working_time
 
-    def set_age (self, new_age):
-        self.age = newage
+    def set_qualification(self, new_qualification):
+        self.qualification = new_qualification
 
-#String method to return a string representation of the doctor object
+    def set_room_number(self, new_room_number):
+        self.room_number = new_room_number
+
+    # String method to return a string representation of the doctor object 
     def str(self):
-        return f'{self.pid}{self.name}{self.disease}{self.gender}_{self.age}'
+        return f"{self.doctorid}{self.name}{self.specialization}{self.workingtime}{self.qualification}_{self.room_number}"
