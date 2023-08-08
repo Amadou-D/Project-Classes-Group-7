@@ -1,4 +1,4 @@
-
+from doctor import Doctor
 # Create Doctor-Manager class
 class Doctor_Manager:
 

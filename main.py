@@ -1,5 +1,5 @@
-
-
+from doctor_management_class import Doctor_Manager
+from Patient_Manager import Patient_Manager
 
 # Define Managment Class
 class Management:

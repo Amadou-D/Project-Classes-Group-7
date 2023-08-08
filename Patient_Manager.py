@@ -1,4 +1,5 @@
 # Define patient manager class   
+from Patient import Patient
 class Patient_Manager:
     def __init__(self):
         self.patients = []
