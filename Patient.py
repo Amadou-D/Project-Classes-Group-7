@@ -39,7 +39,7 @@ class Patient:
         self.gender = new_gender
 
     def set_age (self, new_age):
-        self.age = newage
+        self.age = new_age
 
 #String method to return a string representation of the doctor object
     def str(self):
