@@ -20,7 +20,7 @@ class Management:
             print("Select from the following options, or select 3 to stop: ")
             print("1 - Doctors")
             print("2 - Patients")
-            print("3 - Exit")
+            print("3 - Exit Program")
             
             main_menu = input(">>> ")
             print()
