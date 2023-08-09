@@ -77,7 +77,7 @@ class Doctor_Manager:
     
     # Read from the doctor txt file, strip and split the data in the file to create a doctor object for each line in the file. Then append that object to the doctors list created in the constructor.
     def read_doctors_file(self):
-        with open("doctors.txt", 'r') as file:
+        with open("Project-Classes-Group-7/doctors.txt", 'r') as file:
             for line in file:
                 doctor_id, name ,specialization,working_time,qualification,room_number = line.strip().split('_')
                 if name == 'name':
@@ -172,7 +172,7 @@ class Doctor_Manager:
 
     # Write a doctor object to the doctors txt file in the correct formating using format_dr_info.
     def write_list_of_doctors_to_file(self):
-        with open("doctors.txt", 'w') as file:
+        with open("Project-Classes-Group-7/doctors.txt", 'w') as file:
             for doctor in self.doctors:
                 file.write(self.format_dr_info(doctor) + "\n")
 
@@ -259,7 +259,7 @@ class Patient_Manager:
 
     # Read patients txt file and create a patient object with specific properties for each line in the file.
     def read_patients_file(self):
-        with open("patients.txt", 'r') as file:
+        with open("Project-Classes-Group-7/patients.txt", 'r') as file:
             for line in file:
                 pid, name, disease, gender, age = line.strip().split('_')
                 try:
@@ -319,7 +319,7 @@ class Patient_Manager:
             
     # Write list of patients method which writes and formats a patient object to the patients.txt file 
     def write_list_of_patients_to_file(self):
-        with open('patients.txt', 'w') as file:
+        with open('Project-Classes-Group-7/patients.txt', 'w') as file:
             for patient in self.patients:
                 file.write(self.format_patient_info_for_file(patient) + "\n")
     
