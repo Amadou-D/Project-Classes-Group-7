@@ -41,7 +41,7 @@ class Patient_Manager:
         print()
         for patient in self.patients:
             if int(patient_id) == patient.get_pid():
-                print("{:<5}{:<20}{:<15}{:<15}{:<15}".format('PID','Name','Disease','Gender','Age\n'))
+                print("{:<5}{:<20}{:<15}{:<15}{:<15}".format('ID','Name','Disease','Gender','Age\n'))
                 return self.display_patient_info(patient)
         else:
             print("Can't find the Patient with the same id on the system \n")
