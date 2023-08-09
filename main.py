@@ -35,7 +35,6 @@ class Management:
                         print("6 - Back to the Main Menu")
 
                         doctor_menu = input(">>> ")
-                        print()
                         if doctor_menu == "1":
                             Doctor_Manager().display_doctor_list()
                         elif doctor_menu == "2":
@@ -47,6 +46,7 @@ class Management:
                         elif doctor_menu == "5":
                             Doctor_Manager().edit_doctor_info()
                         elif doctor_menu == "6":
+                            print()
                             break
                                               
             elif main_menu == "2":
