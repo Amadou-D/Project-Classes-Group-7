@@ -73,6 +73,7 @@ class Management:
                             Patient_Manager().edit_patient_info_by_id()
 
                         elif patient_menu == "5":
+                            print()
                             break
                     
             elif main_menu == "3":
